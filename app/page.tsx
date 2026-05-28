@@ -11,7 +11,7 @@ export default function Home() {
     if (!email) return;
 
     try {
-      const res = await fetch('https://statementory.shop/waitlist', {
+      const res = await fetch('https://api.statementory.shop/waitlist', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, produkt }),
