@@ -69,14 +69,13 @@ export default function Home() {
         <h2 className="text-3xl font-black uppercase mb-12">Neue Drops</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-          <div className="group cursor-pointer">
-            <div className="aspect-square bg-zinc-900 border border-white/5 group-hover:border-white/20 transition-all flex items-center justify-center mb-4">
-              <span className="text-zinc-700 text-sm uppercase tracking-widest">T-Shirt</span>
+      <div className="group cursor-pointer">
+            <div className="aspect-square bg-zinc-900 border border-white/5 group-hover:border-white/20 transition-all mb-4 overflow-hidden">
+              <img src="/allesistgut.png" alt="Alles ist gut - T-Shirt" className="w-full h-full object-cover" />
             </div>
             <p className="font-bold uppercase tracking-wider">T-Shirt</p>
-            <p className="text-zinc-500 text-sm">Ab 29,99 €</p>
+            <p className="text-zinc-500 text-sm">Ab 39,90 €</p>
           </div>
-
           <div className="group">
             <div className="aspect-square bg-zinc-900 border border-white/5 relative flex items-center justify-center mb-4 overflow-hidden">
               <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center gap-3 z-10">
