@@ -45,7 +45,7 @@ export default function GoodMorningPage() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          customer: form,
+          recipient: form,
           items: [{ sync_variant_id: VARIANT_IDS[selectedSize], quantity: 1 }],
         }),
       });
