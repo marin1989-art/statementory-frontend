@@ -74,7 +74,7 @@ export default function Home() {
               <img src="/denkenstattfolgen.png" alt="Denken statt Folgen - T-Shirt" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
             <p className="font-bold uppercase tracking-wider">Denken statt Folgen</p>
-            <p className="text-zinc-500 text-sm">39,90 €</p>
+            <p className="text-zinc-500 text-sm">29,00 €</p>
           </Link>
 
           <Link href="/produkte/make-men-men-again" className="group cursor-pointer">
@@ -82,14 +82,14 @@ export default function Home() {
               <img src="/makemenmenagain.png" alt="Make Men Men Again - T-Shirt" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
             <p className="font-bold uppercase tracking-wider">Make Men Men Again</p>
-            <p className="text-zinc-500 text-sm">39,90 €</p>
+            <p className="text-zinc-500 text-sm">29,00 €</p>
           </Link>
 
-          <Link href="/produkte/stop-blaming-start-building" className="group cursor-pointer">
+          <Link href="/produkte/error-404-diese-regierung" className="group cursor-pointer">
             <div className="aspect-square bg-zinc-900 border border-white/5 group-hover:border-white/20 transition-all mb-4 overflow-hidden">
-              <img src="/error.png" alt="Stop Blaming. Start Building. - T-Shirt" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src="/error.png" alt="Error 404 - Diese Regierung befindet sich derzeit außer Betrieb - T-Shirt" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
-            <p className="font-bold uppercase tracking-wider">Stop Blaming. Start Building.</p>
+            <p className="font-bold uppercase tracking-wider">Error 404 — Diese Regierung befindet sich derzeit außer Betrieb</p>
             <p className="text-zinc-500 text-sm">39,90 €</p>
           </Link>
           <div className="group">

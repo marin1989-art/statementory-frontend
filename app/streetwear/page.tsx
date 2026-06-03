@@ -20,7 +20,7 @@ export default function StreetwearPage() {
               <img src="/monalisa.png" alt="Not A Muse. A Mood. - T-Shirt" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
             <p className="font-bold uppercase tracking-wider">Not A Muse. A Mood.</p>
-            <p className="text-zinc-500 text-sm">39,90 €</p>
+            <p className="text-zinc-500 text-sm">39,00 €</p>
           </Link>
 
           <Link href="/produkte/good-morning-friends-and-haters" className="group cursor-pointer">
@@ -28,7 +28,7 @@ export default function StreetwearPage() {
               <img src="/goodmorning.png" alt="Good Morning, Friends And Haters - T-Shirt" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
             <p className="font-bold uppercase tracking-wider">Good Morning, Friends And Haters</p>
-            <p className="text-zinc-500 text-sm">39,90 €</p>
+            <p className="text-zinc-500 text-sm">39,00 €</p>
           </Link>
 
         </div>

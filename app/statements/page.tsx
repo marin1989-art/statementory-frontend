@@ -28,7 +28,7 @@ export default function StatementsPage() {
               <img src="/denkenstattfolgen.png" alt="Denken statt Folgen - T-Shirt" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
             <p className="font-bold uppercase tracking-wider">Denken statt Folgen</p>
-            <p className="text-zinc-500 text-sm">39,90 €</p>
+            <p className="text-zinc-500 text-sm">29,00 €</p>
           </Link>
 
           <Link href="/produkte/make-men-men-again" className="group cursor-pointer">
@@ -36,7 +36,7 @@ export default function StatementsPage() {
               <img src="/makemenmenagain.png" alt="Make Men Men Again - T-Shirt" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
             <p className="font-bold uppercase tracking-wider">Make Men Men Again</p>
-            <p className="text-zinc-500 text-sm">39,90 €</p>
+            <p className="text-zinc-500 text-sm">29,00 €</p>
           </Link>
 
           <Link href="/produkte/error-404-diese-regierung" className="group cursor-pointer">
