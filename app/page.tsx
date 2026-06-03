@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
+import Nav from './components/Nav';
 
 export default function Home() {
   const [emails, setEmails] = useState<{ [key: string]: string }>({});
@@ -31,17 +33,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-black text-white">
-      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-5 border-b border-white/10 bg-black/80 backdrop-blur-md">
-        <span className="text-xl font-bold tracking-widest uppercase">Statementory</span>
-        <div className="flex gap-8 text-sm tracking-widest uppercase text-zinc-400">
-          <a href="#" className="hover:text-white transition-colors">Shop</a>
-          <a href="#" className="hover:text-white transition-colors">Kollektionen</a>
-          <a href="#" className="hover:text-white transition-colors">Über uns</a>
-        </div>
-        <button className="text-sm tracking-widest uppercase border border-white/30 px-4 py-2 hover:bg-white hover:text-black transition-all">
-          Warenkorb
-        </button>
-      </nav>
+      <Nav />
 
       <section className="flex flex-col items-center justify-center min-h-screen text-center px-8 pt-20">
         <p className="text-xs tracking-[0.4em] uppercase text-zinc-500 mb-6">Neue Kollektion 2026</p>
@@ -69,13 +61,37 @@ export default function Home() {
         <h2 className="text-3xl font-black uppercase mb-12">Neue Drops</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-      <div className="group cursor-pointer">
+          <Link href="/produkte/alles-ist-gut" className="group cursor-pointer">
             <div className="aspect-square bg-zinc-900 border border-white/5 group-hover:border-white/20 transition-all mb-4 overflow-hidden">
-              <img src="/allesistgut.png" alt="Alles ist gut - T-Shirt" className="w-full h-full object-cover" />
+              <img src="/allesistgut.png" alt="Alles ist gut - T-Shirt" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
-            <p className="font-bold uppercase tracking-wider">T-Shirt</p>
-            <p className="text-zinc-500 text-sm">Ab 39,90 €</p>
-          </div>
+            <p className="font-bold uppercase tracking-wider">Alles ist gut</p>
+            <p className="text-zinc-500 text-sm">39,90 €</p>
+          </Link>
+
+          <Link href="/produkte/denken-statt-folgen" className="group cursor-pointer">
+            <div className="aspect-square bg-zinc-900 border border-white/5 group-hover:border-white/20 transition-all mb-4 overflow-hidden">
+              <img src="/denkenstattfolgen.png" alt="Denken statt Folgen - T-Shirt" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <p className="font-bold uppercase tracking-wider">Denken statt Folgen</p>
+            <p className="text-zinc-500 text-sm">39,90 €</p>
+          </Link>
+
+          <Link href="/produkte/make-men-men-again" className="group cursor-pointer">
+            <div className="aspect-square bg-zinc-900 border border-white/5 group-hover:border-white/20 transition-all mb-4 overflow-hidden">
+              <img src="/makemenmenagain.png" alt="Make Men Men Again - T-Shirt" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <p className="font-bold uppercase tracking-wider">Make Men Men Again</p>
+            <p className="text-zinc-500 text-sm">39,90 €</p>
+          </Link>
+
+          <Link href="/produkte/stop-blaming-start-building" className="group cursor-pointer">
+            <div className="aspect-square bg-zinc-900 border border-white/5 group-hover:border-white/20 transition-all mb-4 overflow-hidden">
+              <img src="/error.png" alt="Stop Blaming. Start Building. - T-Shirt" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <p className="font-bold uppercase tracking-wider">Stop Blaming. Start Building.</p>
+            <p className="text-zinc-500 text-sm">39,90 €</p>
+          </Link>
           <div className="group">
             <div className="aspect-square bg-zinc-900 border border-white/5 relative flex items-center justify-center mb-4 overflow-hidden">
               <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center gap-3 z-10">
@@ -139,6 +155,22 @@ export default function Home() {
             <p className="font-bold uppercase tracking-wider text-zinc-600">Cap</p>
             <p className="text-zinc-700 text-sm">Bald verfügbar</p>
           </div>
+
+        </div>
+      </section>
+
+      <section className="px-8 py-24 max-w-6xl mx-auto border-t border-white/5">
+        <p className="text-xs tracking-[0.4em] uppercase text-zinc-500 mb-2">Kollektion</p>
+        <h2 className="text-3xl font-black uppercase mb-12">Streetwear</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <Link href="/produkte/not-a-muse-a-mood" className="group cursor-pointer">
+            <div className="aspect-square bg-zinc-100 border border-white/5 group-hover:border-white/20 transition-all mb-4 overflow-hidden">
+              <img src="/monalisa.png" alt="Not A Muse. A Mood. - T-Shirt" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <p className="font-bold uppercase tracking-wider">Not A Muse. A Mood.</p>
+            <p className="text-zinc-500 text-sm">39,90 €</p>
+          </Link>
 
         </div>
       </section>
