@@ -20,7 +20,7 @@ export default function StatementsPage() {
               <img src="/allesistgut.png" alt="Alles ist gut - T-Shirt" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
             <p className="font-bold uppercase tracking-wider">Alles ist gut</p>
-            <p className="text-zinc-500 text-sm">39,90 €</p>
+            <p className="text-zinc-500 text-sm">29,00 €</p>
           </Link>
 
           <Link href="/produkte/denken-statt-folgen" className="group cursor-pointer">
@@ -44,7 +44,7 @@ export default function StatementsPage() {
               <img src="/error.png" alt="Error 404 - Diese Regierung - T-Shirt" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
             <p className="font-bold uppercase tracking-wider">Error 404 — Diese Regierung befindet sich derzeit außer Betrieb</p>
-            <p className="text-zinc-500 text-sm">39,90 €</p>
+            <p className="text-zinc-500 text-sm">29,00 €</p>
           </Link>
 
         </div>

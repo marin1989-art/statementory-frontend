@@ -91,7 +91,7 @@ export default function AllesIstGutPage() {
             ist gut.
           </h1>
 
-          <p className="text-3xl font-bold tracking-wide mb-1">39,90 €</p>
+          <p className="text-3xl font-bold tracking-wide mb-1">29,00 €</p>
           <p className="text-xs text-zinc-600 tracking-widest uppercase mb-10">inkl. MwSt. · Versand ab 4,90 €</p>
 
           <div className="w-8 border-t border-white/10 mb-10" />
@@ -124,7 +124,7 @@ export default function AllesIstGutPage() {
               {apiError && <p className="text-red-400 text-xs tracking-widest uppercase">{apiError}</p>}
               <button type="submit" disabled={submitting}
                 className="w-full py-5 bg-white text-black font-black uppercase tracking-widest text-sm hover:bg-zinc-100 active:scale-[0.98] transition-all disabled:opacity-50 mt-2">
-                {submitting ? 'Wird gesendet …' : 'Jetzt bestellen — 39,90 €'}
+                {submitting ? 'Wird gesendet …' : 'Jetzt bestellen — 29,00 €'}
               </button>
               <button type="button" onClick={() => setStep('select')}
                 className="text-xs text-zinc-600 tracking-widest uppercase hover:text-zinc-400 transition-colors text-center">

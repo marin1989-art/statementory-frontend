@@ -66,7 +66,7 @@ export default function Home() {
               <img src="/allesistgut.png" alt="Alles ist gut - T-Shirt" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
             <p className="font-bold uppercase tracking-wider">Alles ist gut</p>
-            <p className="text-zinc-500 text-sm">39,90 €</p>
+            <p className="text-zinc-500 text-sm">29,00 €</p>
           </Link>
 
           <Link href="/produkte/denken-statt-folgen" className="group cursor-pointer">
@@ -90,7 +90,7 @@ export default function Home() {
               <img src="/error.png" alt="Error 404 - Diese Regierung befindet sich derzeit außer Betrieb - T-Shirt" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
             <p className="font-bold uppercase tracking-wider">Error 404 — Diese Regierung befindet sich derzeit außer Betrieb</p>
-            <p className="text-zinc-500 text-sm">39,90 €</p>
+            <p className="text-zinc-500 text-sm">29,00 €</p>
           </Link>
           <div className="group">
             <div className="aspect-square bg-zinc-900 border border-white/5 relative flex items-center justify-center mb-4 overflow-hidden">
@@ -169,7 +169,7 @@ export default function Home() {
               <img src="/monalisa.png" alt="Not A Muse. A Mood. - T-Shirt" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
             <p className="font-bold uppercase tracking-wider">Not A Muse. A Mood.</p>
-            <p className="text-zinc-500 text-sm">39,90 €</p>
+            <p className="text-zinc-500 text-sm">29,00 €</p>
           </Link>
 
         </div>
