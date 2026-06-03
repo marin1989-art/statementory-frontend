@@ -8,11 +8,11 @@ const SIZES = ['S', 'M', 'L', 'XL', 'XXL'] as const;
 type Size = typeof SIZES[number];
 
 const VARIANT_IDS: Record<Size, string> = {
-  S:   '6a1fa0deb9f098',
-  M:   '6a1fa0deb9f101',
-  L:   '6a1fa0deb9f154',
-  XL:  '6a1fa0deb9f1a2',
-  XXL: '6a1fa0deb9f1e5',
+  S:   '5336992816',
+  M:   '5336992817',
+  L:   '5336992818',
+  XL:  '5336992819',
+  XXL: '5336992820',
 };
 
 type Step = 'select' | 'checkout' | 'success' | 'error';
