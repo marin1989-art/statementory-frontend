@@ -91,13 +91,13 @@ export default function Home() {
         </p>
         <div className="flex gap-4">
           <Link
-            href="/statements"
+            href="/shop"
             className="bg-white text-black px-8 py-3 font-bold uppercase tracking-widest text-sm hover:bg-zinc-200 transition-colors"
           >
             Jetzt shoppen
           </Link>
           <Link
-            href="/streetwear"
+            href="/kollektionen"
             className="border border-white/30 px-8 py-3 uppercase tracking-widest text-sm hover:border-white transition-colors"
           >
             Kollektionen
