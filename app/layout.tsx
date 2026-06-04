@@ -65,6 +65,9 @@ export const metadata: Metadata = {
       "Statement T-Shirts mit Haltung. Gesellschaftskritische Streetwear, designed in Germany.",
     images: ["/allesistgut.png"],
   },
+  verification: {
+    google: 'fECk8S-jaMJvwoUlMRX8LcazO-pB3pV_NBH27X7cOQM',
+  },
   robots: {
     index: true,
     follow: true,
