@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import ProductCard from '../components/ProductCard';
 
 export const metadata: Metadata = {
   title: 'Statements — Politische T-Shirts mit Haltung',
@@ -33,37 +32,10 @@ export default function StatementsPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-          <Link href="/produkte/alles-ist-gut" className="group cursor-pointer">
-            <div className="aspect-square bg-zinc-900 border border-white/5 group-hover:border-white/20 transition-all mb-4 overflow-hidden relative">
-              <Image src="/allesistgut.png" alt="Alles ist gut — Statement T-Shirt, Oversized Unisex" fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 33vw" />
-            </div>
-            <p className="font-bold uppercase tracking-wider">Alles ist gut</p>
-            <p className="text-zinc-500 text-sm">29,00 €</p>
-          </Link>
-
-          <Link href="/produkte/denken-statt-folgen" className="group cursor-pointer">
-            <div className="aspect-square bg-zinc-900 border border-white/5 group-hover:border-white/20 transition-all mb-4 overflow-hidden relative">
-              <Image src="/denkenstattfolgen.png" alt="Denken statt Folgen — Statement T-Shirt, Oversized Unisex" fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 33vw" />
-            </div>
-            <p className="font-bold uppercase tracking-wider">Denken statt Folgen</p>
-            <p className="text-zinc-500 text-sm">29,00 €</p>
-          </Link>
-
-          <Link href="/produkte/make-men-men-again" className="group cursor-pointer">
-            <div className="aspect-square bg-zinc-900 border border-white/5 group-hover:border-white/20 transition-all mb-4 overflow-hidden relative">
-              <Image src="/makemenmenagain.png" alt="Make Men Men Again — Statement T-Shirt, Oversized Unisex" fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 33vw" />
-            </div>
-            <p className="font-bold uppercase tracking-wider">Make Men Men Again</p>
-            <p className="text-zinc-500 text-sm">29,00 €</p>
-          </Link>
-
-          <Link href="/produkte/error-404-diese-regierung" className="group cursor-pointer">
-            <div className="aspect-square bg-zinc-900 border border-white/5 group-hover:border-white/20 transition-all mb-4 overflow-hidden relative">
-              <Image src="/error.png" alt="Error 404 Diese Regierung außer Betrieb — Statement T-Shirt" fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 33vw" />
-            </div>
-            <p className="font-bold uppercase tracking-wider">Error 404 — Diese Regierung befindet sich derzeit außer Betrieb</p>
-            <p className="text-zinc-500 text-sm">29,00 €</p>
-          </Link>
+          <ProductCard href="/produkte/alles-ist-gut" src="/allesistgut.png" alt="Alles ist gut — Statement T-Shirt, Oversized Unisex" name="Alles ist gut" price="29,00 €" />
+          <ProductCard href="/produkte/denken-statt-folgen" src="/denkenstattfolgen.png" alt="Denken statt Folgen — Statement T-Shirt, Oversized Unisex" name="Denken statt Folgen" price="29,00 €" />
+          <ProductCard href="/produkte/make-men-men-again" src="/makemenmenagain.png" alt="Make Men Men Again — Statement T-Shirt, Oversized Unisex" name="Make Men Men Again" price="29,00 €" />
+          <ProductCard href="/produkte/error-404-diese-regierung" src="/error.png" alt="Error 404 Diese Regierung außer Betrieb — Statement T-Shirt" name="Error 404 — Diese Regierung befindet sich derzeit außer Betrieb" price="29,00 €" />
 
         </div>
       </section>

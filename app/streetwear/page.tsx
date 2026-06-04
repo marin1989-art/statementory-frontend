@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import ProductCard from '../components/ProductCard';
 
 export const metadata: Metadata = {
   title: 'Streetwear — Kulturreferenzen neu gedacht',
@@ -33,21 +32,8 @@ export default function StreetwearPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-          <Link href="/produkte/not-a-muse-a-mood" className="group cursor-pointer">
-            <div className="aspect-square bg-zinc-100 border border-white/5 group-hover:border-white/20 transition-all mb-4 overflow-hidden relative">
-              <Image src="/monalisa.png" alt="Not A Muse. A Mood. — Streetwear T-Shirt mit Mona Lisa" fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 33vw" />
-            </div>
-            <p className="font-bold uppercase tracking-wider">Not A Muse. A Mood.</p>
-            <p className="text-zinc-500 text-sm">39,00 €</p>
-          </Link>
-
-          <Link href="/produkte/good-morning-friends-and-haters" className="group cursor-pointer">
-            <div className="aspect-square bg-zinc-100 border border-white/5 group-hover:border-white/20 transition-all mb-4 overflow-hidden relative">
-              <Image src="/goodmorning.png" alt="Good Morning, Friends And Haters — Streetwear T-Shirt" fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 33vw" />
-            </div>
-            <p className="font-bold uppercase tracking-wider">Good Morning, Friends And Haters</p>
-            <p className="text-zinc-500 text-sm">39,00 €</p>
-          </Link>
+          <ProductCard href="/produkte/not-a-muse-a-mood" src="/monalisa.png" alt="Not A Muse. A Mood. — Streetwear T-Shirt mit Mona Lisa" name="Not A Muse. A Mood." price="39,00 €" bg="bg-zinc-100" />
+          <ProductCard href="/produkte/good-morning-friends-and-haters" src="/goodmorning.png" alt="Good Morning, Friends And Haters — Streetwear T-Shirt" name="Good Morning, Friends And Haters" price="39,00 €" bg="bg-zinc-100" />
 
         </div>
       </section>
