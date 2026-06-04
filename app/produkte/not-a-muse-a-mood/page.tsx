@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Nav from '../../components/Nav';
+import Footer from '../../components/Footer';
 import { useCart } from '../../context/CartContext';
 
 const SIZES = ['S', 'M', 'L', 'XL', 'XXL'] as const;
