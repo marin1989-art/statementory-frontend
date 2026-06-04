@@ -1,7 +1,17 @@
+'use client';
+
+import { useEffect } from 'react';
 import Link from 'next/link';
 import Nav from '../components/Nav';
+import { useCart } from '../context/CartContext';
 
 export default function SuccessPage() {
+  const { clearCart } = useCart();
+
+  useEffect(() => {
+    clearCart();
+  }, []);
+
   return (
     <main className="min-h-screen bg-black text-white">
       <Nav />
@@ -13,8 +23,7 @@ export default function SuccessPage() {
           <p className="text-zinc-500 text-sm tracking-widest uppercase mb-2">Dein Statement wird produziert und bald verschickt.</p>
           <p className="text-zinc-600 text-xs tracking-widest uppercase mb-12">Bestätigung per E-Mail</p>
           <div className="w-8 border-t border-white/10 mx-auto mb-12" />
-          <Link href="/"
-            className="inline-block text-xs tracking-[0.3em] uppercase text-zinc-400 hover:text-white transition-colors">
+          <Link href="/" className="inline-block text-xs tracking-[0.3em] uppercase text-zinc-400 hover:text-white transition-colors">
             ← Zurück zum Shop
           </Link>
         </div>
