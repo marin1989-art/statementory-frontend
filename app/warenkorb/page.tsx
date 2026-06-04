@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 import { useCart } from '../context/CartContext';
 
 export default function WarenkorbPage() {
@@ -140,9 +141,7 @@ export default function WarenkorbPage() {
         )}
       </div>
 
-      <footer className="border-t border-white/10 px-8 py-8 text-center text-zinc-700 text-xs tracking-widest uppercase">
-        © 2026 Statementory — statementory.shop
-      </footer>
+      <Footer />
     </main>
   );
 }

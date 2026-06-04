@@ -85,7 +85,7 @@ export default function NotAMuseAMoodPage() {
           </div>
         </div>
       </div>
-      <footer className="border-t border-white/10 px-8 py-8 text-center text-zinc-700 text-xs tracking-widest uppercase">© 2026 Statementory — statementory.shop</footer>
+      <Footer />
     </main>
   );
 }

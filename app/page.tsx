@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 
 export default function Home() {
   const [emails, setEmails] = useState<{ [key: string]: string }>({});
@@ -175,9 +176,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="border-t border-white/10 px-8 py-8 text-center text-zinc-600 text-xs tracking-widest uppercase">
-        © 2026 Statementory — statementory.shop
-      </footer>
+      <Footer />
     </main>
   );
 }
