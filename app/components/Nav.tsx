@@ -15,7 +15,7 @@ export default function Nav() {
         <Link href="/" className="hover:text-white transition-colors">Shop</Link>
         <Link href="/statements" className="hover:text-white transition-colors">Statements</Link>
         <Link href="/streetwear" className="hover:text-white transition-colors">Streetwear</Link>
-        <a href="#" className="hover:text-white transition-colors">Über uns</a>
+        <Link href="/ueber-uns" className="hover:text-white transition-colors">Über uns</Link>
       </div>
       <Link href="/warenkorb"
         className="relative text-sm tracking-widest uppercase border border-white/30 px-4 py-2 hover:bg-white hover:text-black transition-all">
