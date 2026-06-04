@@ -1,6 +1,14 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+
+export const metadata: Metadata = {
+  title: 'Datenschutzerklärung',
+  description: 'Datenschutzerklärung von Statementory — DSGVO-konforme Informationen zu Datenverarbeitung, Stripe, Printful und deinen Rechten.',
+  alternates: { canonical: 'https://statementory.shop/datenschutz' },
+  robots: { index: false, follow: true },
+};
 
 export default function DatenschutzPage() {
   return (

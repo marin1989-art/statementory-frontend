@@ -1,0 +1,69 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Make Men Men Again — Statement T-Shirt | 29 €',
+  description:
+    'Statement T-Shirt "Make Men Men Again" — provokante Streetwear mit Haltung. Oversized Unisex, 100% Bio-Baumwolle, 280 g/m², Siebdruck made in Germany. 29 €.',
+  alternates: {
+    canonical: 'https://statementory.shop/produkte/make-men-men-again',
+  },
+  openGraph: {
+    title: '"Make Men Men Again" Statement T-Shirt — Statementory',
+    description:
+      'Statement T-Shirt "Make Men Men Again". Oversized Unisex, 100% Bio-Baumwolle. 29 €.',
+    url: 'https://statementory.shop/produkte/make-men-men-again',
+    images: [
+      {
+        url: 'https://statementory.shop/makemenmenagain.png',
+        width: 672,
+        height: 1014,
+        alt: 'Make Men Men Again — Statement T-Shirt Mockup',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '"Make Men Men Again" Statement T-Shirt',
+    description: 'Oversized Unisex, 100% Bio-Baumwolle. 29 €.',
+    images: ['https://statementory.shop/makemenmenagain.png'],
+  },
+};
+
+const productJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'Make Men Men Again — Statement T-Shirt',
+  description:
+    'Provokantes Statement T-Shirt "Make Men Men Again". Oversized Unisex-Schnitt, 100% Bio-Baumwolle, 280 g/m², Siebdruck made in Germany.',
+  image: 'https://statementory.shop/makemenmenagain.png',
+  url: 'https://statementory.shop/produkte/make-men-men-again',
+  brand: { '@type': 'Brand', name: 'Statementory' },
+  category: 'Bekleidung > T-Shirts',
+  material: '100% Bio-Baumwolle',
+  offers: {
+    '@type': 'Offer',
+    price: '29.00',
+    priceCurrency: 'EUR',
+    availability: 'https://schema.org/InStock',
+    priceValidUntil: '2027-12-31',
+    seller: { '@type': 'Organization', name: 'Statementory', url: 'https://statementory.shop' },
+    shippingDetails: {
+      '@type': 'OfferShippingDetails',
+      shippingRate: { '@type': 'MonetaryAmount', value: '4.90', currency: 'EUR' },
+      shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'DE' },
+    },
+  },
+};
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
+      {children}
+    </>
+  );
+}

@@ -1,6 +1,14 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+
+export const metadata: Metadata = {
+  title: 'Impressum',
+  description: 'Impressum von Statementory — Next Point Advisory Ltd., Angaben gemäß § 5 TMG.',
+  alternates: { canonical: 'https://statementory.shop/impressum' },
+  robots: { index: false, follow: true },
+};
 
 export default function ImpressumPage() {
   return (

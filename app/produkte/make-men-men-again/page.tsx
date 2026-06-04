@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
@@ -37,7 +38,7 @@ export default function MakeMenMenAgainPage() {
       <div className="min-h-screen grid grid-cols-1 md:grid-cols-2">
         <div className="md:sticky md:top-0 md:h-screen flex items-center justify-center bg-zinc-950 border-r border-white/5 p-12 pt-24">
           <div className="w-full max-w-md aspect-square relative overflow-hidden">
-            <img src="/makemenmenagain.png" alt="Make Men Men Again — T-Shirt Mockup" className="w-full h-full object-contain" />
+            <Image src="/makemenmenagain.png" alt="Make Men Men Again — Statement T-Shirt Mockup" fill className="object-contain" priority sizes="(max-width: 768px) 100vw, 50vw" />
           </div>
         </div>
         <div className="flex flex-col justify-center px-12 pt-32 pb-24 max-w-xl">
@@ -48,8 +49,10 @@ export default function MakeMenMenAgainPage() {
             <span className="mx-2">/</span>
             <span className="text-zinc-500">Make Men Men Again</span>
           </p>
-          <h1 className="text-6xl font-black uppercase tracking-tight leading-[0.9] mb-2">Make Men</h1>
-          <h1 className="text-6xl font-black uppercase tracking-tight leading-[0.9] mb-8 text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-600">Men Again.</h1>
+          <h1 className="text-6xl font-black uppercase tracking-tight leading-[0.9] mb-8">
+            <span className="block mb-1">Make Men</span>
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-600">Men Again.</span>
+          </h1>
           <p className="text-3xl font-bold tracking-wide mb-1">29,00 €</p>
           <p className="text-xs text-zinc-600 tracking-widest uppercase mb-10">inkl. MwSt. · Versand ab 4,90 €</p>
           <div className="w-8 border-t border-white/10 mb-10" />
