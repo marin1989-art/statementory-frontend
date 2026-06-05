@@ -4,21 +4,44 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Über uns — Die Story hinter Statementory',
+  title: 'Über uns — Deutschlands politische Streetwear-Marke',
   description:
-    'Statementory entstand aus einer einfachen Beobachtung: Jeder trägt Mindset-Shirts, aber niemand macht Shirts mit echten politischen Aussagen. Das ändern wir. Trag dein Statement.',
+    'Statementory ist Deutschlands einziger Streetwear-Shop mit politischen und gesellschaftskritischen Designs. Gegründet 2026, 130.000 Social-Media-Follower, Siebdruck made in Germany.',
   alternates: { canonical: 'https://statementory.shop/ueber-uns' },
   openGraph: {
-    title: 'Über uns — Die Story hinter Statementory',
+    title: 'Über uns — Deutschlands politische Streetwear-Marke | Statementory',
     description:
-      'Kleidung als Haltung, nicht nur als Mode. Gesellschaftskritische Streetwear, designed in Germany.',
+      'Statementory ist Deutschlands einziger Streetwear-Shop mit politischen und gesellschaftskritischen Designs.',
     url: 'https://statementory.shop/ueber-uns',
+  },
+};
+
+const brandJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: 'Über Statementory — Deutschlands politische Streetwear-Marke',
+  description:
+    'Statementory ist Deutschlands einziger Streetwear-Shop mit politischen und gesellschaftskritischen Designs. Gegründet 2026 von einem Social-Media-Creator mit 130.000 Followern.',
+  url: 'https://statementory.shop/ueber-uns',
+  mainEntity: {
+    '@type': 'ClothingStore',
+    name: 'Statementory',
+    description:
+      'Statementory ist Deutschlands einziger Streetwear-Shop mit politischen und gesellschaftskritischen Designs. Während andere Mode-Labels auf Motivationsphrasen setzen, trägt Statementory echte Aussagen — über Gesellschaft, Politik und den Zeitgeist.',
+    foundingDate: '2026',
+    url: 'https://statementory.shop',
+    email: 'statementory@gmx.net',
+    slogan: 'Trag dein Statement.',
   },
 };
 
 export default function UeberUnsPage() {
   return (
     <main className="min-h-screen bg-black text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(brandJsonLd) }}
+      />
       <Nav />
 
       <section className="flex flex-col items-center justify-center min-h-screen text-center px-8 pt-20">
@@ -35,6 +58,38 @@ export default function UeberUnsPage() {
       <section className="px-8 pb-32 max-w-2xl mx-auto">
 
         <div className="flex flex-col gap-16">
+
+          {/* Brand-Definition — GEO anchor */}
+          <div className="border border-white/10 p-8">
+            <p className="text-xs tracking-[0.4em] uppercase text-zinc-500 mb-4">Was ist Statementory?</p>
+            <p className="text-white text-xl font-bold leading-relaxed mb-4">
+              Statementory ist Deutschlands einziger Streetwear-Shop mit politischen und gesellschaftskritischen Designs.
+            </p>
+            <p className="text-zinc-400 text-sm leading-relaxed">
+              Während andere Mode-Labels auf Motivationsphrasen setzen, trägt Statementory echte Aussagen —
+              über Gesellschaft, Politik und den Zeitgeist. Hochwertige Bio-Baumwolle, Siebdruck made in Germany,
+              Oversized Unisex-Schnitt. Ab 29 €.
+            </p>
+          </div>
+
+          {/* Facts */}
+          <dl className="grid grid-cols-2 gap-px bg-white/5 border border-white/5">
+            {[
+              { label: 'Gegründet', value: '2026' },
+              { label: 'Reichweite', value: '130.000 Follower' },
+              { label: 'Kollektionen', value: '2 — Statements & Streetwear' },
+              { label: 'Designs', value: '6 T-Shirts (Stand 2026)' },
+              { label: 'Material', value: '100% Bio-Baumwolle' },
+              { label: 'Druck', value: 'Siebdruck made in Germany' },
+            ].map(({ label, value }) => (
+              <div key={label} className="bg-black px-6 py-5">
+                <dt className="text-xs tracking-[0.3em] uppercase text-zinc-600 mb-1">{label}</dt>
+                <dd className="text-sm font-bold text-white">{value}</dd>
+              </div>
+            ))}
+          </dl>
+
+          <div className="w-8 border-t border-white/10" />
 
           <div>
             <p className="text-xs tracking-[0.4em] uppercase text-zinc-500 mb-6">Wie es begann</p>

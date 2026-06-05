@@ -83,18 +83,45 @@ export const metadata: Metadata = {
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": ["Organization", "ClothingStore"],
   name: "Statementory",
+  alternateName: "Statementory Shop",
   url: BASE_URL,
   logo: `${BASE_URL}/favicon.ico`,
   email: "statementory@gmx.net",
   description:
-    "Statement Streetwear mit Haltung — gesellschaftskritische T-Shirts, designed in Germany.",
+    "Statementory ist Deutschlands einziger Streetwear-Shop mit politischen und gesellschaftskritischen Designs. 100% Bio-Baumwolle, Siebdruck made in Germany, Oversized Unisex, ab 29 €.",
+  slogan: "Trag dein Statement.",
+  foundingDate: "2026",
+  knowsAbout: [
+    "Politische Streetwear",
+    "Statement T-Shirts",
+    "Gesellschaftskritische Mode",
+    "Streetwear Deutschland",
+    "Bio-Baumwolle T-Shirts",
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Statementory Kollektionen",
+    itemListElement: [
+      {
+        "@type": "OfferCatalog",
+        name: "Statements",
+        description: "Politische und gesellschaftskritische T-Shirts",
+        url: `${BASE_URL}/statements`,
+      },
+      {
+        "@type": "OfferCatalog",
+        name: "Streetwear",
+        description: "Kulturreferenzen neu gedacht — Kunst trifft Street",
+        url: `${BASE_URL}/streetwear`,
+      },
+    ],
+  },
   address: {
     "@type": "PostalAddress",
     addressCountry: "BG",
   },
-  sameAs: [],
 };
 
 const websiteJsonLd = {

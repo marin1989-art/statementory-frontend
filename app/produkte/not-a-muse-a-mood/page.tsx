@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
+import ProductFAQ from '../../components/ProductFAQ';
 import { useCart } from '../../context/CartContext';
 
 const SIZES = ['S', 'M', 'L', 'XL', 'XXL'] as const;
@@ -89,6 +90,7 @@ export default function NotAMuseAMoodPage() {
           </div>
         </div>
       </div>
+      <ProductFAQ price="39,00 €" />
       <Footer />
     </main>
   );
