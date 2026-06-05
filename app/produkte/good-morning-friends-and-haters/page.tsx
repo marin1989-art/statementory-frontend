@@ -6,6 +6,8 @@ import Link from 'next/link';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 import ProductFAQ from '../../components/ProductFAQ';
+import SizeChart, { STANLEY_STELLA_MEASUREMENTS } from '../../components/SizeChart';
+import ShippingInfo from '../../components/ShippingInfo';
 import { useCart } from '../../context/CartContext';
 
 const SIZES = ['S', 'M', 'L', 'XL', 'XXL', '3XL'] as const;
@@ -73,6 +75,8 @@ export default function GoodMorningPage() {
             </div>
             {sizeError && <p className="text-red-400 text-xs tracking-widest uppercase mt-3">{sizeError}</p>}
           </div>
+          <SizeChart measurements={STANLEY_STELLA_MEASUREMENTS} />
+          <ShippingInfo />
           <button onClick={handleAddToCart}
             className={`w-full py-5 font-black uppercase tracking-widest text-sm active:scale-[0.98] transition-all ${added ? 'bg-zinc-800 text-green-400 border border-green-400/30' : 'bg-white text-black hover:bg-zinc-100'}`}>
             {added ? '✓ Im Warenkorb' : 'In den Warenkorb — 39,00 €'}
