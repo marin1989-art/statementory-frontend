@@ -61,7 +61,7 @@ export default function ImpressumPage() {
           <section>
             <h2 className="text-xs tracking-[0.3em] uppercase text-zinc-500 mb-4">Kontakt</h2>
             <div className="text-zinc-300 flex flex-col gap-1">
-              <p>E-Mail: <a href="mailto:statementory@gmx.net" className="text-white hover:text-zinc-300 transition-colors">statementory@gmx.net</a></p>
+              <p>E-Mail: <Link href="/kontakt" className="text-white hover:text-zinc-300 transition-colors">Kontaktformular</Link></p>
               <p>Website: <a href="https://statementory.shop" className="text-white hover:text-zinc-300 transition-colors">statementory.shop</a></p>
             </div>
           </section>

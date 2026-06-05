@@ -6,6 +6,7 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row items-center justify-between gap-4">
         <span>© 2026 Statementory — statementory.shop</span>
         <div className="flex gap-8">
+          <Link href="/kontakt" className="hover:text-zinc-400 transition-colors">Kontakt</Link>
           <Link href="/impressum" className="hover:text-zinc-400 transition-colors">Impressum</Link>
           <Link href="/datenschutz" className="hover:text-zinc-400 transition-colors">Datenschutz</Link>
         </div>
