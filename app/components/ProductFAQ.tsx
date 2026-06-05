@@ -27,7 +27,7 @@ const faqs = [
 
 export default function ProductFAQ({ price }: ProductFAQProps) {
   return (
-    <section className="px-12 pb-24 max-w-xl">
+    <section className="px-4 pb-12 md:px-12 md:pb-24 max-w-xl">
       <div className="w-8 border-t border-white/10 mb-10" />
       <h2 className="text-xs tracking-[0.3em] uppercase text-zinc-500 mb-8">Häufige Fragen</h2>
       <dl className="flex flex-col gap-7">

@@ -23,7 +23,7 @@ export default function StatementsPage() {
     <main className="min-h-screen bg-black text-white">
       <Nav />
 
-      <section className="pt-40 pb-24 px-8 max-w-6xl mx-auto">
+      <section className="pt-24 pb-16 px-4 md:pt-40 md:pb-24 md:px-8 max-w-6xl mx-auto">
         <p className="text-xs tracking-[0.4em] uppercase text-zinc-500 mb-4">Kollektion</p>
         <h1 className="text-5xl font-black uppercase tracking-tight leading-none mb-4">Statements</h1>
         <p className="text-zinc-500 text-sm max-w-md mb-16">

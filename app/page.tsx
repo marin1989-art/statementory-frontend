@@ -80,32 +80,32 @@ export default function Home() {
         aria-label="Willkommen bei Statementory"
       >
         <p className="text-xs tracking-[0.4em] uppercase text-zinc-500 mb-6">Neue Kollektion 2026</p>
-        <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tight leading-none mb-6">
+        <h1 className="text-4xl sm:text-6xl md:text-8xl font-black uppercase tracking-tight leading-none mb-6">
           Trag deine<br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-500">
             Haltung.
           </span>
         </h1>
-        <p className="text-zinc-400 max-w-md mb-10 text-lg">
+        <p className="text-zinc-400 max-w-md mb-10 text-base md:text-lg px-4 sm:px-0">
           Streetwear mit Aussage. T-Shirts, Hoodies &amp; Caps — designed in Germany.
         </p>
-        <div className="flex gap-4">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto px-4 sm:px-0">
           <Link
             href="/shop"
-            className="bg-white text-black px-8 py-3 font-bold uppercase tracking-widest text-sm hover:bg-zinc-200 transition-colors"
+            className="bg-white text-black px-8 py-4 sm:py-3 font-bold uppercase tracking-widest text-sm hover:bg-zinc-200 transition-colors text-center"
           >
             Jetzt shoppen
           </Link>
           <Link
             href="/kollektionen"
-            className="border border-white/30 px-8 py-3 uppercase tracking-widest text-sm hover:border-white transition-colors"
+            className="border border-white/30 px-8 py-4 sm:py-3 uppercase tracking-widest text-sm hover:border-white transition-colors text-center"
           >
             Kollektionen
           </Link>
         </div>
       </section>
 
-      <section className="px-8 py-24 max-w-6xl mx-auto" aria-label="Neue Drops — Statements Kollektion">
+      <section className="px-4 md:px-8 py-16 md:py-24 max-w-6xl mx-auto" aria-label="Neue Drops — Statements Kollektion">
         <p className="text-xs tracking-[0.4em] uppercase text-zinc-500 mb-2">Verfügbar</p>
         <h2 className="text-3xl font-black uppercase mb-12">Neue Drops</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -121,7 +121,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-8 py-24 max-w-6xl mx-auto border-t border-white/5" aria-label="Streetwear Kollektion">
+      <section className="px-4 md:px-8 py-16 md:py-24 max-w-6xl mx-auto border-t border-white/5" aria-label="Streetwear Kollektion">
         <p className="text-xs tracking-[0.4em] uppercase text-zinc-500 mb-2">Kollektion</p>
         <h2 className="text-3xl font-black uppercase mb-12">Streetwear</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

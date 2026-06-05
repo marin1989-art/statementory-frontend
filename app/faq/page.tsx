@@ -145,7 +145,7 @@ export default function FAQPage() {
       />
       <Nav />
 
-      <div className="max-w-2xl mx-auto px-8 pt-40 pb-24">
+      <div className="max-w-2xl mx-auto px-4 md:px-8 pt-24 pb-16 md:pt-40 md:pb-24">
 
         <p className="text-xs tracking-[0.4em] uppercase text-zinc-600 mb-8">
           <Link href="/" className="hover:text-zinc-400 transition-colors">Shop</Link>
@@ -153,7 +153,7 @@ export default function FAQPage() {
           <span className="text-zinc-500">FAQ</span>
         </p>
 
-        <h1 className="text-5xl font-black uppercase tracking-tight leading-[0.9] mb-4">Häufige Fragen</h1>
+        <h1 className="text-3xl md:text-5xl font-black uppercase tracking-tight leading-[0.9] mb-4">Häufige Fragen</h1>
         <p className="text-zinc-500 text-sm max-w-md mb-16">
           Alles zu Statementory — der Marke, den Produkten, Versand und Rückgabe.
         </p>

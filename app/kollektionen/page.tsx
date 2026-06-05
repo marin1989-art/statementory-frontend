@@ -21,7 +21,7 @@ export default function KollektionenPage() {
     <main className="min-h-screen bg-black text-white">
       <Nav />
 
-      <section className="pt-40 pb-24 px-8 max-w-6xl mx-auto">
+      <section className="pt-24 pb-16 px-4 md:pt-40 md:pb-24 md:px-8 max-w-6xl mx-auto">
         <p className="text-xs tracking-[0.4em] uppercase text-zinc-500 mb-4">Übersicht</p>
         <h1 className="text-5xl font-black uppercase tracking-tight leading-none mb-4">Kollektionen</h1>
         <p className="text-zinc-500 text-sm max-w-md mb-16">
@@ -39,9 +39,9 @@ export default function KollektionenPage() {
               sizes="(max-width: 768px) 100vw, 50vw"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-10">
+            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">
               <p className="text-xs tracking-[0.4em] uppercase text-zinc-500 mb-3">01</p>
-              <h2 className="text-4xl font-black uppercase tracking-tight leading-none mb-4">Statements</h2>
+              <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight leading-none mb-4">Statements</h2>
               <p className="text-zinc-400 text-sm leading-relaxed mb-6 max-w-xs">
                 Politisch. Gesellschaftskritisch. Unbequem. Shirts die etwas sagen.
               </p>
@@ -60,9 +60,9 @@ export default function KollektionenPage() {
               sizes="(max-width: 768px) 100vw, 50vw"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-10">
+            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">
               <p className="text-xs tracking-[0.4em] uppercase text-zinc-500 mb-3">02</p>
-              <h2 className="text-4xl font-black uppercase tracking-tight leading-none mb-4">Streetwear</h2>
+              <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight leading-none mb-4">Streetwear</h2>
               <p className="text-zinc-400 text-sm leading-relaxed mb-6 max-w-xs">
                 Kunst trifft Street. Kulturreferenzen neu gedacht — für alle.
               </p>

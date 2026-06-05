@@ -46,7 +46,7 @@ export default function UeberUnsPage() {
 
       <section className="flex flex-col items-center justify-center min-h-screen text-center px-8 pt-20">
         <p className="text-xs tracking-[0.4em] uppercase text-zinc-500 mb-6">Die Story</p>
-        <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tight leading-none mb-8">
+        <h1 className="text-4xl sm:text-6xl md:text-8xl font-black uppercase tracking-tight leading-none mb-8">
           Wear your<br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-500">
             Statement.
@@ -55,7 +55,7 @@ export default function UeberUnsPage() {
         <div className="w-8 border-t border-white/10 mx-auto" />
       </section>
 
-      <section className="px-8 pb-32 max-w-2xl mx-auto">
+      <section className="px-4 md:px-8 pb-16 md:pb-32 max-w-2xl mx-auto">
 
         <div className="flex flex-col gap-16">
 
@@ -73,7 +73,7 @@ export default function UeberUnsPage() {
           </div>
 
           {/* Facts */}
-          <dl className="grid grid-cols-2 gap-px bg-white/5 border border-white/5">
+          <dl className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-white/5 border border-white/5">
             {[
               { label: 'Gegründet', value: '2026' },
               { label: 'Reichweite', value: '130.000 Follower' },

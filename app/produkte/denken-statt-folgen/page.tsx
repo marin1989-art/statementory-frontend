@@ -37,12 +37,12 @@ export default function DenkenStattFolgenPage() {
     <main className="min-h-screen bg-black text-white">
       <Nav />
       <div className="min-h-screen grid grid-cols-1 md:grid-cols-2">
-        <div className="md:sticky md:top-0 md:h-screen flex items-center justify-center bg-zinc-950 border-r border-white/5 p-12 pt-24">
+        <div className="md:sticky md:top-0 md:h-screen flex items-center justify-center bg-zinc-950 border-r border-white/5 p-6 pt-20 md:p-12 md:pt-24">
           <div className="w-full max-w-md aspect-square relative overflow-hidden">
             <Image src="/denkenstattfolgen.png" alt="Denken statt Folgen — Statement T-Shirt Mockup" fill className="object-contain" priority sizes="(max-width: 768px) 100vw, 50vw" />
           </div>
         </div>
-        <div className="flex flex-col justify-center px-12 pt-32 pb-24 max-w-xl">
+        <div className="flex flex-col justify-center px-4 pt-8 pb-12 md:px-12 md:pt-32 md:pb-24 max-w-xl">
           <p className="text-xs tracking-[0.4em] uppercase text-zinc-600 mb-6">
             <Link href="/" className="hover:text-zinc-400 transition-colors">Shop</Link>
             <span className="mx-2">/</span>
@@ -50,7 +50,7 @@ export default function DenkenStattFolgenPage() {
             <span className="mx-2">/</span>
             <span className="text-zinc-500">Denken statt Folgen</span>
           </p>
-          <h1 className="text-6xl font-black uppercase tracking-tight leading-[0.9] mb-8">
+          <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tight leading-[0.9] mb-8">
             <span className="block mb-1">Denken</span>
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-600">statt Folgen.</span>
           </h1>
