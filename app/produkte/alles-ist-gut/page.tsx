@@ -8,7 +8,7 @@ import Footer from '../../components/Footer';
 import ProductFAQ from '../../components/ProductFAQ';
 import { useCart } from '../../context/CartContext';
 
-const SIZES = ['S', 'M', 'L', 'XL', 'XXL'] as const;
+const SIZES = ['S', 'M', 'L', 'XL', 'XXL', '3XL'] as const;
 type Size = typeof SIZES[number];
 
 const VARIANT_IDS: Record<Size, string> = {
@@ -17,6 +17,7 @@ const VARIANT_IDS: Record<Size, string> = {
   L:   '5336992818',
   XL:  '5336992819',
   XXL: '5336992820',
+  '3XL': '5336992821',
 };
 
 export default function AllesIstGutPage() {

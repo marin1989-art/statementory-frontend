@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: 'Welche Größen sind verfügbar?',
-    a: 'S, M, L, XL und XXL. Der Schnitt ist Oversized Unisex — das Shirt fällt bewusst größer aus. Wer einen engeren Fit bevorzugt, sollte eine Größe kleiner wählen.',
+    a: 'S, M, L, XL, XXL und 3XL. Der Schnitt ist Oversized Unisex — das Shirt fällt bewusst größer aus. Wer einen engeren Fit bevorzugt, sollte eine Größe kleiner wählen.',
   },
   {
     q: 'Wie wird das Design aufgetragen?',
