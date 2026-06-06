@@ -8,6 +8,7 @@ import Footer from '../../components/Footer';
 import ProductFAQ from '../../components/ProductFAQ';
 import SizeChart, { GILDAN_MEASUREMENTS } from '../../components/SizeChart';
 import ShippingInfo from '../../components/ShippingInfo';
+import BackButton from '../../components/BackButton';
 import { useCart } from '../../context/CartContext';
 
 const SIZES = ['S', 'M', 'L', 'XL', 'XXL', '3XL'] as const;
@@ -39,6 +40,7 @@ export default function Error404Page() {
   return (
     <main className="min-h-screen bg-black text-white">
       <Nav />
+      <BackButton />
       <div className="min-h-screen grid grid-cols-1 md:grid-cols-2">
         <div className="md:sticky md:top-0 md:h-screen flex items-center justify-center bg-zinc-950 border-r border-white/5 p-6 pt-20 md:p-12 md:pt-24">
           <div className="w-full max-w-md aspect-square relative overflow-hidden">
