@@ -141,7 +141,7 @@ export default function Home() {
 
           <ProductCard href="/produkte/alles-ist-gut" src="/allesistgut.png" alt="Alles ist gut — Statement T-Shirt, Oversized Unisex" name="Alles ist gut" price="29,00 €" />
           <ProductCard href="/produkte/denken-statt-folgen" src="/denkenstattfolgen.png" alt="Denken statt Folgen — Statement T-Shirt, Oversized Unisex" name="Denken statt Folgen" price="29,00 €" />
-          <ProductCard href="/produkte/make-men-men-again" src="/makemenmenagain.png" alt="Make Men Men Again — Statement T-Shirt, Oversized Unisex" name="Make Men Men Again" price="29,00 €" />
+          <ProductCard href="/produkte/make-men-men-again" src="/make-men-back.png" alt="Make Men Men Again — Statement T-Shirt, Oversized Unisex" name="Make Men Men Again" price="29,00 €" />
           <ProductCard href="/produkte/error-404-diese-regierung" src="/error.png" alt="Error 404 Diese Regierung außer Betrieb — Statement T-Shirt" name="Error 404 — Diese Regierung befindet sich derzeit außer Betrieb" price="29,00 €" />
 
           <WaitlistItem produkt="hoodie" label="Hoodie" />
