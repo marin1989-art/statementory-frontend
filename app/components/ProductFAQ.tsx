@@ -5,15 +5,11 @@ interface ProductFAQProps {
 const faqs = [
   {
     q: 'Aus welchem Material besteht das T-Shirt?',
-    a: '100% Bio-Baumwolle, 280 g/m². Der Stoff ist vegan, OEKO-TEX zertifiziert und angenehm schwer — kein billiges Druck-Shirt, sondern ein hochwertiges Kleidungsstück.',
+    a: '100 % ringgesponnene Bio-Baumwolle, 180 g/m², Single-Jersey. GOTS & OCS zertifiziert, OEKO-TEX STANDARD 100 (Nr. 1112055, Centexbel) und PETA-Approved Vegan. Angenehm zu tragen und nachhaltig produziert.',
   },
   {
     q: 'Welche Größen sind verfügbar?',
-    a: 'S, M, L, XL, XXL und 3XL. Der Schnitt ist Oversized Unisex — das Shirt fällt bewusst größer aus. Wer einen engeren Fit bevorzugt, sollte eine Größe kleiner wählen.',
-  },
-  {
-    q: 'Wie wird das Design aufgetragen?',
-    a: 'Alle Designs werden im hochwertigen Siebdruckverfahren gedruckt — made in Germany. Der Druck ist langlebig, farbstark und waschbeständig bis 40 °C (Linksherum waschen empfohlen).',
+    a: 'S, M, L, XL, XXL und 3XL. Der Schnitt ist normale Passform (Unisex).',
   },
   {
     q: 'Was kostet der Versand?',

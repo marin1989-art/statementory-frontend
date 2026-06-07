@@ -1,3 +1,7 @@
+'use client';
+
+import { useState } from 'react';
+
 interface Measurement {
   size: string;
   laenge: number;
@@ -28,32 +32,42 @@ interface SizeChartProps {
 }
 
 export default function SizeChart({ measurements }: SizeChartProps) {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="mb-8">
-      <p className="text-xs tracking-[0.3em] uppercase text-zinc-500 mb-3">Größentabelle</p>
-      <div className="overflow-x-auto">
-        <table className="w-full text-xs border-collapse">
-          <thead>
-            <tr className="border-b border-white/10">
-              <th className="text-left pb-2 pr-4 text-zinc-600 tracking-widest uppercase font-normal">Gr.</th>
-              <th className="text-right pb-2 pr-4 text-zinc-600 tracking-widest uppercase font-normal">Länge</th>
-              <th className="text-right pb-2 pr-4 text-zinc-600 tracking-widest uppercase font-normal">Breite</th>
-              <th className="text-right pb-2 text-zinc-600 tracking-widest uppercase font-normal">Ärmel</th>
-            </tr>
-          </thead>
-          <tbody>
-            {measurements.map(({ size, laenge, breite, aermel }) => (
-              <tr key={size} className="border-b border-white/5 last:border-0">
-                <td className="py-2 pr-4 text-white font-bold tracking-widest">{size}</td>
-                <td className="py-2 pr-4 text-zinc-400 text-right">{laenge}</td>
-                <td className="py-2 pr-4 text-zinc-400 text-right">{breite}</td>
-                <td className="py-2 text-zinc-400 text-right">{aermel}</td>
+      <button
+        onClick={() => setOpen(o => !o)}
+        className="text-xs tracking-[0.3em] uppercase text-zinc-300 border border-white/30 hover:border-white hover:text-white transition-all px-4 py-2 flex items-center gap-2"
+      >
+        Größentabelle
+        <span>{open ? '↑' : '↓'}</span>
+      </button>
+      {open && (
+        <div className="mt-3 overflow-x-auto">
+          <table className="w-full text-xs border-collapse">
+            <thead>
+              <tr className="border-b border-white/10">
+                <th className="text-left pb-2 pr-4 text-zinc-600 tracking-widest uppercase font-normal">Gr.</th>
+                <th className="text-right pb-2 pr-4 text-zinc-600 tracking-widest uppercase font-normal">Länge</th>
+                <th className="text-right pb-2 pr-4 text-zinc-600 tracking-widest uppercase font-normal">Breite</th>
+                <th className="text-right pb-2 text-zinc-600 tracking-widest uppercase font-normal">Ärmel</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      <p className="text-zinc-700 text-xs tracking-widest uppercase mt-2">Alle Maße in cm · Flach gemessen</p>
+            </thead>
+            <tbody>
+              {measurements.map(({ size, laenge, breite, aermel }) => (
+                <tr key={size} className="border-b border-white/5 last:border-0">
+                  <td className="py-2 pr-4 text-white font-bold tracking-widest">{size}</td>
+                  <td className="py-2 pr-4 text-zinc-400 text-right">{laenge}</td>
+                  <td className="py-2 pr-4 text-zinc-400 text-right">{breite}</td>
+                  <td className="py-2 text-zinc-400 text-right">{aermel}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <p className="text-zinc-700 text-xs tracking-widest uppercase mt-2">Alle Maße in cm · Flach gemessen</p>
+        </div>
+      )}
     </div>
   );
 }

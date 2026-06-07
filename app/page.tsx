@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import WaitlistItem from './components/WaitlistItem';
@@ -76,32 +77,60 @@ export default function Home() {
       <Nav />
 
       <section
-        className="flex flex-col items-center justify-center min-h-screen text-center px-8 pt-20"
+        className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
         aria-label="Willkommen bei Statementory"
       >
-        <p className="text-xs tracking-[0.4em] uppercase text-zinc-500 mb-6">Neue Kollektion 2026</p>
-        <h1 className="text-4xl sm:text-6xl md:text-8xl font-black uppercase tracking-tight leading-none mb-6">
-          Trag deine<br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-500">
-            Haltung.
-          </span>
-        </h1>
-        <p className="text-zinc-400 max-w-md mb-10 text-base md:text-lg px-4 sm:px-0">
-          Streetwear mit Aussage. T-Shirts, Hoodies &amp; Caps — designed in Germany.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto px-4 sm:px-0">
-          <Link
-            href="/shop"
-            className="bg-white text-black px-8 py-4 sm:py-3 font-bold uppercase tracking-widest text-sm hover:bg-zinc-200 transition-colors text-center"
-          >
-            Jetzt shoppen
-          </Link>
-          <Link
-            href="/kollektionen"
-            className="border border-white/30 px-8 py-4 sm:py-3 uppercase tracking-widest text-sm hover:border-white transition-colors text-center"
-          >
-            Kollektionen
-          </Link>
+        <div className="absolute inset-0 flex">
+          <div className="relative w-1/2 overflow-hidden">
+            <Image
+              src="/make-men-back.png"
+              alt="Make Men Men Again"
+              fill
+              className="object-cover object-center"
+              style={{ filter: 'grayscale(40%) brightness(0.55)' }}
+              priority
+              sizes="50vw"
+            />
+          </div>
+          <div className="relative w-1/2 overflow-hidden">
+            <Image
+              src="/goodmorning-back.png"
+              alt="Good Morning Friends And Haters"
+              fill
+              className="object-cover object-center"
+              style={{ filter: 'grayscale(40%) brightness(0.55)' }}
+              priority
+              sizes="50vw"
+            />
+          </div>
+        </div>
+        <div className="absolute inset-y-0 left-1/2 w-px bg-white/10 z-10" />
+
+        <div className="relative z-10 text-center px-6">
+          <p className="text-xs tracking-[0.4em] uppercase text-zinc-400 mb-6">Neue Kollektion 2026</p>
+          <h1 className="text-7xl md:text-[10rem] font-black uppercase tracking-tight leading-[0.85] mb-10">
+            Trag deine<br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-300 to-zinc-500">
+              Haltung.
+            </span>
+          </h1>
+          <p className="text-zinc-300 text-base max-w-md mx-auto mb-10 leading-relaxed">
+            Streetwear mit Aussage. T-Shirts, Hoodies &amp; Caps.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <Link
+              href="/shop"
+              className="bg-white text-black px-10 py-4 font-black uppercase tracking-widest text-sm hover:bg-zinc-200 transition-colors text-center"
+            >
+              Jetzt shoppen
+            </Link>
+            <Link
+              href="/kollektionen"
+              className="border border-white/30 px-10 py-4 uppercase tracking-widest text-sm hover:border-white transition-colors text-center"
+            >
+              Kollektionen
+            </Link>
+          </div>
         </div>
       </section>
 

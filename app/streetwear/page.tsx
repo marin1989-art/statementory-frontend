@@ -32,8 +32,8 @@ export default function StreetwearPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-          <ProductCard href="/produkte/not-a-muse-a-mood" src="/monalisa.png" alt="Not A Muse. A Mood. — Streetwear T-Shirt mit Mona Lisa" name="Not A Muse. A Mood." price="39,00 €" bg="bg-zinc-100" />
-          <ProductCard href="/produkte/good-morning-friends-and-haters" src="/goodmorning.png" alt="Good Morning, Friends And Haters — Streetwear T-Shirt" name="Good Morning, Friends And Haters" price="39,00 €" bg="bg-zinc-100" />
+          <ProductCard href="/produkte/not-a-muse-a-mood" src="/monalisa-back.png" alt="Not A Muse. A Mood. — Streetwear T-Shirt mit Mona Lisa" name="Not A Muse. A Mood." price="39,00 €" bg="bg-zinc-100" />
+          <ProductCard href="/produkte/good-morning-friends-and-haters" src="/goodmorning-back.png" alt="Good Morning, Friends And Haters — Streetwear T-Shirt" name="Good Morning, Friends And Haters" price="39,00 €" bg="bg-zinc-100" />
 
         </div>
       </section>
