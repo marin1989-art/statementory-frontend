@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     images: ["/allesistgut.png"],
   },
   verification: {
-    google: 'fECk8S-jaMJvwoUlMRX8LcazO-pB3pV_NBH27X7cOQM',
+    google: 'Y0It4bnl-ocEuJqaEAhiVbb0oWkRM_LjBClw1Wuc5U8',
   },
   robots: {
     index: true,
