@@ -25,6 +25,7 @@ export default function WarenkorbPage() {
             name: `${i.productName} — Größe ${i.size}`,
             price_cents: i.price_cents,
             quantity: i.quantity,
+            image: i.image,
           })),
           metadata: {
             items: JSON.stringify(items.map(i => ({
