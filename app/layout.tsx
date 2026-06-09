@@ -91,7 +91,7 @@ const organizationJsonLd = {
   logo: `${BASE_URL}/favicon.ico`,
   email: "statementory@gmx.net",
   description:
-    "Statementory ist Deutschlands einziger Streetwear-Shop mit politischen und gesellschaftskritischen Designs. 100% Bio-Baumwolle, Siebdruck made in Germany, Oversized Unisex, ab 29 €.",
+    "Statementory ist Deutschlands einziger Streetwear-Shop mit politischen und gesellschaftskritischen Designs. 100% Bio-Baumwolle, ab 29 €.",
   slogan: "Trag dein Statement.",
   foundingDate: "2026",
   knowsAbout: [

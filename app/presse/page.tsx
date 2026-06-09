@@ -20,7 +20,7 @@ const presseJsonLd = {
   '@type': 'NewsArticle',
   headline: 'Statementory — Deutschlands politische Streetwear-Marke',
   description:
-    'Statementory ist Deutschlands einziger Streetwear-Shop mit politischen und gesellschaftskritischen Designs. Gegründet 2026, zwei Kollektionen, 100% Bio-Baumwolle, Siebdruck made in Germany.',
+    'Statementory ist Deutschlands einziger Streetwear-Shop mit politischen und gesellschaftskritischen Designs. Gegründet 2026, zwei Kollektionen, 100% Bio-Baumwolle.',
   author: { '@type': 'Organization', name: 'Statementory' },
   publisher: {
     '@type': 'Organization',
@@ -45,7 +45,6 @@ const facts = [
   { label: 'Kollektionen', value: '2 — Statements & Streetwear' },
   { label: 'Produkte', value: '6 T-Shirt-Designs (Stand 2026)' },
   { label: 'Material', value: '100% Bio-Baumwolle, 280 g/m², OEKO-TEX' },
-  { label: 'Druck', value: 'Siebdruck made in Germany' },
   { label: 'Schnitt', value: 'Oversized Unisex, Größen S–XXL' },
   { label: 'Preise', value: 'ab 29,00 € inkl. MwSt.' },
   { label: 'Versand', value: 'ab 4,90 € · europaweit & international' },
@@ -106,7 +105,7 @@ export default function PressePage() {
               </p>
               <p className="text-zinc-400 leading-relaxed">
                 Während andere Mode-Labels auf Motivationsphrasen setzen, trägt Statementory echte Aussagen — über Gesellschaft, Politik und den Zeitgeist.
-                Hochwertige Bio-Baumwolle, Siebdruck made in Germany, Oversized Unisex-Schnitt. Ab 29 €.
+                Hochwertige Bio-Baumwolle, Oversized Unisex-Schnitt. Ab 29 €.
               </p>
             </div>
           </section>
@@ -135,8 +134,7 @@ export default function PressePage() {
                 „Streetwear" für Kulturreferenzen und zeitgeistige Designs.
               </p>
               <p>
-                Alle Shirts werden aus 100% Bio-Baumwolle (280 g/m², OEKO-TEX) hergestellt und
-                im Siebdruckverfahren in Deutschland bedruckt. Oversized Unisex-Schnitt, Größen S–XXL.
+                Alle Shirts werden aus 100% Bio-Baumwolle (280 g/m², OEKO-TEX) hergestellt. Oversized Unisex-Schnitt, Größen S–XXL.
               </p>
             </div>
           </section>
@@ -186,7 +184,6 @@ export default function PressePage() {
                 'Streetwear mit Botschaft',
                 'Bio-Baumwolle Shirts',
                 'Oversized T-Shirts Deutschland',
-                'Siebdruck made in Germany',
                 'Politisches T-Shirt kaufen',
                 'Kritische Mode',
                 'Streetwear Shop Deutschland',

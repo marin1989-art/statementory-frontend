@@ -6,14 +6,14 @@ import ProductCard from '../components/ProductCard';
 export const metadata: Metadata = {
   title: 'Statements — Politische T-Shirts mit Haltung',
   description:
-    'Gesellschaftskritische Statement T-Shirts aus Deutschland. Trag deine Meinung — Oversized Bio-Baumwolle, Siebdruck made in Germany. Ab 29 €.',
+    'Gesellschaftskritische Statement T-Shirts aus Deutschland. Trag deine Meinung — Oversized Bio-Baumwolle. Ab 29 €.',
   alternates: {
     canonical: 'https://statementory.shop/statements',
   },
   openGraph: {
     title: 'Statements — Politische T-Shirts mit Haltung | Statementory',
     description:
-      'Gesellschaftskritische Statement T-Shirts. Oversized Bio-Baumwolle, Siebdruck made in Germany.',
+      'Gesellschaftskritische Statement T-Shirts. Oversized Bio-Baumwolle.',
     url: 'https://statementory.shop/statements',
   },
 };

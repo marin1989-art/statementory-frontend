@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 export const metadata: Metadata = {
   title: 'Über uns — Deutschlands politische Streetwear-Marke',
   description:
-    'Statementory ist Deutschlands einziger Streetwear-Shop mit politischen und gesellschaftskritischen Designs. Gegründet 2026, 130.000 Social-Media-Follower, Siebdruck made in Germany.',
+    'Statementory ist Deutschlands einziger Streetwear-Shop mit politischen und gesellschaftskritischen Designs. Gegründet 2026, 130.000 Social-Media-Follower.',
   alternates: { canonical: 'https://statementory.shop/ueber-uns' },
   openGraph: {
     title: 'Über uns — Deutschlands politische Streetwear-Marke | Statementory',
@@ -67,7 +67,7 @@ export default function UeberUnsPage() {
             </p>
             <p className="text-zinc-400 text-sm leading-relaxed">
               Während andere Mode-Labels auf Motivationsphrasen setzen, trägt Statementory echte Aussagen —
-              über Gesellschaft, Politik und den Zeitgeist. Hochwertige Bio-Baumwolle, Siebdruck made in Germany,
+              über Gesellschaft, Politik und den Zeitgeist. Hochwertige Bio-Baumwolle,
               Oversized Unisex-Schnitt. Ab 29 €.
             </p>
           </div>
@@ -80,7 +80,6 @@ export default function UeberUnsPage() {
               { label: 'Kollektionen', value: '2 — Statements & Streetwear' },
               { label: 'Designs', value: '6 T-Shirts (Stand 2026)' },
               { label: 'Material', value: '100% Bio-Baumwolle' },
-              { label: 'Druck', value: 'Siebdruck made in Germany' },
             ].map(({ label, value }) => (
               <div key={label} className="bg-black px-6 py-5">
                 <dt className="text-xs tracking-[0.3em] uppercase text-zinc-600 mb-1">{label}</dt>

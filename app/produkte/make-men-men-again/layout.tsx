@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Make Men Men Again — Statement T-Shirt | 29 €',
   description:
-    'Statement T-Shirt "Make Men Men Again" — provokante Streetwear mit Haltung. Oversized Unisex, 100% Bio-Baumwolle, 280 g/m², Siebdruck made in Germany. 29 €.',
+    'Statement T-Shirt "Make Men Men Again" — provokante Streetwear mit Haltung. Oversized Unisex, 100% Bio-Baumwolle. 29 €.',
   alternates: {
     canonical: 'https://statementory.shop/produkte/make-men-men-again',
   },
@@ -35,7 +35,7 @@ const productJsonLd = {
   '@type': 'Product',
   name: 'Make Men Men Again — Statement T-Shirt',
   description:
-    'Provokantes Statement T-Shirt "Make Men Men Again". Oversized Unisex-Schnitt, 100% Bio-Baumwolle, 280 g/m², Siebdruck made in Germany.',
+    'Provokantes Statement T-Shirt "Make Men Men Again". Oversized Unisex-Schnitt, 100% Bio-Baumwolle.',
   image: 'https://statementory.shop/makemenmenagain.png',
   url: 'https://statementory.shop/produkte/make-men-men-again',
   brand: { '@type': 'Brand', name: 'Statementory' },
@@ -63,7 +63,6 @@ const productFaqJsonLd = {
   mainEntity: [
     { '@type': 'Question', name: 'Aus welchem Material besteht das T-Shirt?', acceptedAnswer: { '@type': 'Answer', text: '100% Bio-Baumwolle, 280 g/m², OEKO-TEX zertifiziert. Oversized Unisex-Schnitt. Vegan.' } },
     { '@type': 'Question', name: 'Welche Größen gibt es?', acceptedAnswer: { '@type': 'Answer', text: 'S, M, L, XL, XXL und 3XL. Der Schnitt ist Oversized Unisex — bei normalem Fit eine Größe kleiner wählen.' } },
-    { '@type': 'Question', name: 'Wie wird das Design gedruckt?', acceptedAnswer: { '@type': 'Answer', text: 'Siebdruck made in Germany. Langlebig, farbstark und waschbeständig bis 40 °C. Linksherum waschen empfohlen.' } },
     { '@type': 'Question', name: 'Was kostet der Versand?', acceptedAnswer: { '@type': 'Answer', text: 'Ab 4,90 € nach Deutschland. Lieferung europaweit und international. Lieferzeit ca. 5–10 Werktage.' } },
     { '@type': 'Question', name: 'Ist eine Rückgabe möglich?', acceptedAnswer: { '@type': 'Answer', text: 'Da jedes Shirt auf Bestellung produziert wird (Print-on-Demand), sind Rückgaben nur bei Produktionsfehlern oder falscher Lieferung möglich. Kontakt: statementory@gmx.net.' } },
   ],

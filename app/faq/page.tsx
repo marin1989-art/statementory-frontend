@@ -26,7 +26,7 @@ const faqSections = [
       },
       {
         q: 'Was macht Statementory einzigartig?',
-        a: 'Statementory ist die einzige deutsche Streetwear-Marke, die konsequent politische und gesellschaftskritische Botschaften auf hochwertige T-Shirts druckt. Kein "Hustle"-Motivationskitsch — sondern echte Haltung zu Themen, die Menschen bewegen: Regierung, Gesellschaft, Zeitgeist. Alle Shirts aus 100% Bio-Baumwolle, Siebdruck made in Germany.',
+        a: 'Statementory ist die einzige deutsche Streetwear-Marke, die konsequent politische und gesellschaftskritische Botschaften auf hochwertige T-Shirts druckt. Kein "Hustle"-Motivationskitsch — sondern echte Haltung zu Themen, die Menschen bewegen: Regierung, Gesellschaft, Zeitgeist. Alle Shirts aus 100% Bio-Baumwolle.',
       },
       {
         q: 'Wer steckt hinter Statementory?',
@@ -38,7 +38,7 @@ const faqSections = [
       },
       {
         q: 'Welche Kollektionen gibt es?',
-        a: 'Statementory hat zwei Kollektionen: "Statements" mit politischen und gesellschaftskritischen Designs (ab 29 €) und "Streetwear" mit Kulturreferenzen neu gedacht — Kunst trifft Street (ab 39 €). Beide Kollektionen aus 100% Bio-Baumwolle, Oversized Unisex-Schnitt, Siebdruck made in Germany.',
+        a: 'Statementory hat zwei Kollektionen: "Statements" mit politischen und gesellschaftskritischen Designs (ab 29 €) und "Streetwear" mit Kulturreferenzen neu gedacht — Kunst trifft Street (ab 39 €). Beide Kollektionen aus 100% Bio-Baumwolle, Oversized Unisex-Schnitt.',
       },
     ],
   },
@@ -53,10 +53,6 @@ const faqSections = [
       {
         q: 'Aus welchem Material bestehen die T-Shirts?',
         a: 'Alle Statementory T-Shirts bestehen aus 100% Bio-Baumwolle mit 280 g/m². Das Gewicht macht sie angenehm schwer und langlebig — kein billiges Druck-Shirt, sondern ein hochwertiges Kleidungsstück. Der Stoff ist vegan und OEKO-TEX zertifiziert.',
-      },
-      {
-        q: 'Wie werden die Designs gedruckt?',
-        a: 'Alle Designs werden im Siebdruckverfahren aufgetragen — made in Germany. Siebdruck ist das hochwertigste Druckverfahren für Textilien: farbstark, langlebig und waschbeständig. Die Shirts werden auf Bestellung produziert (Print-on-Demand) über den Fulfillment-Partner Printful.',
       },
       {
         q: 'Was kosten die Shirts?',
@@ -118,7 +114,7 @@ const faqSections = [
       },
       {
         q: 'Wie pflege ich das Shirt richtig?',
-        a: 'Das Shirt bei 30–40 °C waschen, Linksherum drehen (schützt den Druck), nicht im Trockner trocknen, nicht bügeln auf dem Druck. So hält der Siebdruck viele Jahre.',
+        a: 'Das Shirt bei 30–40 °C waschen, Linksherum drehen (schützt den Druck), nicht im Trockner trocknen, nicht bügeln auf dem Druck. So bleibt der Druck lange erhalten.',
       },
     ],
   },
