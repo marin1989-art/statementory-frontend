@@ -103,7 +103,7 @@ export default function ProductCard({
       {oldPrice ? (
         <div className="flex items-center gap-2 flex-wrap">
           <span className="text-white text-sm font-bold">{price}</span>
-          <span className="text-zinc-600 text-sm line-through decoration-1">{oldPrice}</span>
+          <span className="text-zinc-400 text-sm line-through decoration-1">{oldPrice}</span>
           {savingLabel && (
             <span className="text-[11px] tracking-wider uppercase text-green-400 border border-green-400/30 px-2 py-0.5">
               {savingLabel}

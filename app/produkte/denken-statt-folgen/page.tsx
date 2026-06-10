@@ -61,8 +61,12 @@ export default function DenkenStattFolgenPage() {
             <span className="block mb-1">Denken</span>
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-zinc-600">statt Folgen.</span>
           </h1>
-          <p className="text-3xl font-bold tracking-wide mb-1">29,00 €</p>
-          <p className="text-xs text-zinc-600 tracking-widest uppercase mb-10">inkl. MwSt. · Versand ab 4,90 €</p>
+          <div className="flex items-center gap-3 flex-wrap mb-1">
+            <p className="text-3xl font-bold tracking-wide">29,00 €</p>
+            <p className="text-xl text-zinc-400 line-through decoration-1">39,00 €</p>
+            <span className="text-xs tracking-wider uppercase text-green-400 border border-green-400/40 px-2.5 py-1">Du sparst 10 €</span>
+          </div>
+          <p className="text-xs text-zinc-500 tracking-widest uppercase mb-10">Launch-Preis · inkl. MwSt. · Versand ab 4,90 €</p>
           <div className="w-8 border-t border-white/10 mb-10" />
           <div className="mb-8">
             <div className="flex items-center justify-between mb-4">
