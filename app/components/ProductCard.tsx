@@ -10,6 +10,8 @@ interface ProductCardProps {
   alt: string;
   name: string;
   price: string;
+  oldPrice?: string;
+  badge?: string;
   bg?: string;
   sizes?: string;
 }
@@ -20,6 +22,8 @@ export default function ProductCard({
   alt,
   name,
   price,
+  oldPrice,
+  badge,
   bg = 'bg-zinc-900',
   sizes = '(max-width: 768px) 100vw, 33vw',
 }: ProductCardProps) {
@@ -37,6 +41,12 @@ export default function ProductCard({
     setOrigin(`${(x / rect.width) * 100}% ${(y / rect.height) * 100}%`);
   };
 
+  const parsePrice = (p: string) => parseFloat(p.replace(/[^\d,]/g, '').replace(',', '.'));
+  const saving = oldPrice ? parsePrice(oldPrice) - parsePrice(price) : 0;
+  const savingLabel = saving > 0
+    ? `Du sparst ${Number.isInteger(saving) ? saving : saving.toFixed(2).replace('.', ',')} €`
+    : '';
+
   return (
     <Link href={href} className="group cursor-pointer">
       <div
@@ -47,6 +57,11 @@ export default function ProductCard({
         onMouseLeave={() => setHovered(false)}
         onMouseMove={handleMouseMove}
       >
+        {badge && (
+          <span className="absolute top-3 left-3 z-30 bg-white text-black text-[10px] font-black tracking-[0.15em] uppercase px-2.5 py-1.5">
+            {badge}
+          </span>
+        )}
         <Image
           src={src}
           alt={alt}
@@ -85,7 +100,19 @@ export default function ProductCard({
         )}
       </div>
       <p className="font-bold uppercase tracking-wider">{name}</p>
-      <p className="text-zinc-500 text-sm">{price}</p>
+      {oldPrice ? (
+        <div className="flex items-center gap-2 flex-wrap">
+          <span className="text-white text-sm font-bold">{price}</span>
+          <span className="text-zinc-600 text-sm line-through decoration-1">{oldPrice}</span>
+          {savingLabel && (
+            <span className="text-[11px] tracking-wider uppercase text-green-400 border border-green-400/30 px-2 py-0.5">
+              {savingLabel}
+            </span>
+          )}
+        </div>
+      ) : (
+        <p className="text-zinc-500 text-sm">{price}</p>
+      )}
     </Link>
   );
 }
