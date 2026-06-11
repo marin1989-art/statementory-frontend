@@ -32,10 +32,10 @@ export default function StatementsPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-          <ProductCard href="/produkte/alles-ist-gut" src="/alles-ist-gut-back.png" alt="Alles ist gut — Statement T-Shirt, Oversized Unisex" name="Alles ist gut" price="29,00 €" />
-          <ProductCard href="/produkte/denken-statt-folgen" src="/denken-statt-folgen-back.png" alt="Denken statt Folgen — Statement T-Shirt, Oversized Unisex" name="Denken statt Folgen" price="29,00 €" />
-          <ProductCard href="/produkte/make-men-men-again" src="/make-men-back.png" alt="Make Men Men Again — Statement T-Shirt, Oversized Unisex" name="Make Men Men Again" price="29,00 €" />
-          <ProductCard href="/produkte/error-404-diese-regierung" src="/error-404-back.png" alt="Error 404 Diese Regierung außer Betrieb — Statement T-Shirt" name="Error 404 — Diese Regierung befindet sich derzeit außer Betrieb" price="29,00 €" />
+          <ProductCard href="/produkte/alles-ist-gut" src="/alles-ist-gut-back.png" alt="Alles ist gut — Statement T-Shirt, Oversized Unisex" name="Alles ist gut" price="29,00 €" oldPrice="39,00 €" badge="Launch-Preis" />
+          <ProductCard href="/produkte/denken-statt-folgen" src="/denken-statt-folgen-back.png" alt="Denken statt Folgen — Statement T-Shirt, Oversized Unisex" name="Denken statt Folgen" price="29,00 €" oldPrice="39,00 €" badge="Launch-Preis" />
+          <ProductCard href="/produkte/make-men-men-again" src="/make-men-back.png" alt="Make Men Men Again — Statement T-Shirt, Oversized Unisex" name="Make Men Men Again" price="29,00 €" oldPrice="39,00 €" badge="Launch-Preis" />
+          <ProductCard href="/produkte/error-404-diese-regierung" src="/error-404-back.png" alt="Error 404 Diese Regierung außer Betrieb — Statement T-Shirt" name="Error 404 — Diese Regierung befindet sich derzeit außer Betrieb" price="29,00 €" oldPrice="39,00 €" badge="Launch-Preis" />
 
         </div>
       </section>

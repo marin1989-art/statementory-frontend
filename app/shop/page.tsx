@@ -39,6 +39,8 @@ export default function ShopPage() {
               alt="Alles ist gut — Statement T-Shirt, Oversized Unisex"
               name="Alles ist gut"
               price="29,00 €"
+              oldPrice="39,00 €"
+              badge="Launch-Preis"
             />
             <ProductCard
               href="/produkte/denken-statt-folgen"
@@ -46,6 +48,8 @@ export default function ShopPage() {
               alt="Denken statt Folgen — Statement T-Shirt, Oversized Unisex"
               name="Denken statt Folgen"
               price="29,00 €"
+              oldPrice="39,00 €"
+              badge="Launch-Preis"
             />
             <ProductCard
               href="/produkte/make-men-men-again"
@@ -53,6 +57,8 @@ export default function ShopPage() {
               alt="Make Men Men Again — Statement T-Shirt, Oversized Unisex"
               name="Make Men Men Again"
               price="29,00 €"
+              oldPrice="39,00 €"
+              badge="Launch-Preis"
             />
             <ProductCard
               href="/produkte/error-404-diese-regierung"
@@ -60,6 +66,8 @@ export default function ShopPage() {
               alt="Error 404 Diese Regierung außer Betrieb — Statement T-Shirt"
               name="Error 404 — Diese Regierung befindet sich derzeit außer Betrieb"
               price="29,00 €"
+              oldPrice="39,00 €"
+              badge="Launch-Preis"
             />
           </div>
         </div>
