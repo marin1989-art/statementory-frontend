@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CookieSettingsLink from './CookieSettingsLink';
 
 export default function Footer() {
   return (
@@ -9,6 +10,7 @@ export default function Footer() {
           <Link href="/kontakt" className="hover:text-zinc-400 transition-colors">Kontakt</Link>
           <Link href="/impressum" className="hover:text-zinc-400 transition-colors">Impressum</Link>
           <Link href="/datenschutz" className="hover:text-zinc-400 transition-colors">Datenschutz</Link>
+          <CookieSettingsLink />
         </div>
       </div>
     </footer>

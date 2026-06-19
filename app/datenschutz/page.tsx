@@ -95,19 +95,41 @@ export default function DatenschutzPage() {
           <div className="w-8 border-t border-white/10" />
 
           <section>
-            <h2 className="text-xs tracking-[0.3em] uppercase text-zinc-500 mb-4">5. Cookies</h2>
+            <h2 className="text-xs tracking-[0.3em] uppercase text-zinc-500 mb-4">5. Cookies & lokaler Speicher</h2>
             <p className="text-zinc-400 leading-relaxed mb-4">
-              Diese Website verwendet ausschließlich technisch notwendige Cookies bzw. lokalen Browserspeicher (localStorage) zur Speicherung des Warenkorbs. Es werden keine Tracking-, Marketing- oder Analyse-Cookies eingesetzt.
+              Diese Website verwendet lokalen Browserspeicher (localStorage) zur technisch notwendigen Speicherung des Warenkorbs. Eine Einwilligung ist hierfür nicht erforderlich.
             </p>
-            <p className="text-zinc-400 leading-relaxed">
-              Beim Bezahlvorgang über Stripe können seitens Stripe technisch notwendige Cookies gesetzt werden. Diese unterliegen der Datenschutzrichtlinie von Stripe.
+            <p className="text-zinc-400 leading-relaxed mb-4">
+              Darüber hinaus wird — nur bei ausdrücklicher Einwilligung — der Meta Pixel eingesetzt (siehe Abschnitt 6). Beim Bezahlvorgang über Stripe können seitens Stripe technisch notwendige Cookies gesetzt werden. Diese unterliegen der Datenschutzrichtlinie von Stripe.
             </p>
           </section>
 
           <div className="w-8 border-t border-white/10" />
 
           <section>
-            <h2 className="text-xs tracking-[0.3em] uppercase text-zinc-500 mb-4">6. Deine Rechte</h2>
+            <h2 className="text-xs tracking-[0.3em] uppercase text-zinc-500 mb-4">6. Meta Pixel (Facebook)</h2>
+            <p className="text-zinc-400 leading-relaxed mb-4">
+              Mit deiner Einwilligung setzen wir den <span className="text-zinc-300">Meta Pixel</span> der Meta Platforms Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland, ein.
+            </p>
+            <p className="text-zinc-400 leading-relaxed mb-4">
+              Der Meta Pixel ist ein Analyse- und Werbewerkzeug, das erfasst, wie Besucher mit unserer Website interagieren (z. B. Seitenaufrufe). Diese Daten werden an Server von Meta übertragen und können zur Messung der Werbewirksamkeit sowie zur Aussteuerung personalisierter Werbung auf Facebook und Instagram genutzt werden. Dabei können auch Daten in die USA übermittelt werden.
+            </p>
+            <p className="text-zinc-400 leading-relaxed mb-4">
+              Rechtsgrundlage ist deine Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO. Die Einwilligung ist freiwillig und kann jederzeit mit Wirkung für die Zukunft widerrufen werden — über den Link <span className="text-zinc-300">„Cookie-Einstellungen"</span> im Footer dieser Seite.
+            </p>
+            <p className="text-zinc-400 leading-relaxed">
+              Weitere Informationen zur Datenverarbeitung durch Meta:{' '}
+              <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener noreferrer"
+                className="text-zinc-300 hover:text-white transition-colors underline underline-offset-2">
+                facebook.com/privacy/policy
+              </a>
+            </p>
+          </section>
+
+          <div className="w-8 border-t border-white/10" />
+
+          <section>
+            <h2 className="text-xs tracking-[0.3em] uppercase text-zinc-500 mb-4">7. Deine Rechte</h2>
             <p className="text-zinc-400 leading-relaxed mb-4">
               Du hast gemäß DSGVO folgende Rechte bezüglich deiner personenbezogenen Daten:
             </p>
